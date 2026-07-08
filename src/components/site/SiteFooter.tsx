@@ -32,7 +32,7 @@ export function SiteFooter() {
             </div>
             <div className="foot-col">
               <h5 className="foot-col__head">D-ALabs</h5>
-              <a href="https://github.com/D-ALabs/Alchyx-web" target="_blank" rel="noreferrer">
+              <a href="https://github.com/D-ALabs/Alchyx" target="_blank" rel="noreferrer">
                 GitHub
               </a>
               <a href="https://d-alabs.vercel.app" target="_blank" rel="noreferrer">

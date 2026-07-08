@@ -51,7 +51,7 @@ export function SiteNav() {
             <ThemeSwitcher />
           </div>
           <a
-            href="https://github.com/D-ALabs/Alchyx-web"
+            href="https://github.com/D-ALabs/Alchyx"
             target="_blank"
             rel="noreferrer"
             className="nav-github"
