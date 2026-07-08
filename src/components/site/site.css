@@ -167,29 +167,25 @@
   gap: 11px;
   text-decoration: none;
 }
-.nav-brand__mark {
-  display: grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 9px;
-  background: var(--accent);
-  color: var(--accent-ink);
+/* Real D-ALabs wordmark (public/dalabs-logo.png). Ink on transparent; inverted
+   to light on the dark + Ark skins, matching the D-ALabs site's own approach. */
+.nav-brand__logo {
+  height: 22px;
+  width: auto;
+  display: block;
 }
-.nav-brand__glyph {
-  font-size: 15px;
-  line-height: 1;
+[data-theme="dark"] .nav-brand__logo,
+[data-theme="ark"] .nav-brand__logo {
+  filter: invert(1) brightness(1.05);
 }
 .nav-brand__word {
+  padding-left: 12px;
+  border-left: 1px solid var(--bd);
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 18px;
   letter-spacing: -0.02em;
   color: var(--ink);
-}
-.nav-brand__sub {
-  color: var(--faint);
-  font-weight: 400;
 }
 .nav-links {
   display: flex;

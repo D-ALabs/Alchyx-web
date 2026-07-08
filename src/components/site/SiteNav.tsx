@@ -27,13 +27,10 @@ export function SiteNav() {
   return (
     <header className="nav">
       <div className="nav-inner">
-        <Link href="/" className="nav-brand" aria-label="Alchyx home">
-          <span className="nav-brand__mark" aria-hidden="true">
-            <span className="nav-brand__glyph">◇</span>
-          </span>
-          <span className="nav-brand__word">
-            Alchyx<span className="nav-brand__sub"> / index</span>
-          </span>
+        <Link href="/" className="nav-brand" aria-label="Alchyx — a D-ALabs design system, home">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/dalabs-logo.png" alt="D-ALabs" className="nav-brand__logo" />
+          <span className="nav-brand__word">Alchyx</span>
         </Link>
 
         <nav className="nav-links" aria-label="Primary">
