@@ -26,7 +26,7 @@ const spaceMono = Space_Mono({
 
 const siteName = "Alchyx — the D-ALabs component index";
 const siteDescription =
-  "Alchyx re-skins the best of eight design systems — shadcn/ui, Radix, Base UI, Meta Astryx, Fluent, Primer, Paste, and Ant — in one color, on the D-ALabs Lab / Dark / Ark language. Explore the foundations and search every component.";
+  "Alchyx is the D-ALabs design system — one coherent React + TypeScript library on the Lab / Dark / Ark language, bringing the best of eight design systems into a single accessible system. Explore the foundations and search every component.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://alchyx.d-alabs.com"),

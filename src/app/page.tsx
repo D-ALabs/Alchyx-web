@@ -37,14 +37,15 @@ export default function HomePage() {
       <section className="hero">
         <Container size="wide">
           <div className="hero__copy">
-            <Eyebrow index="alchyx">The D-ALabs component index</Eyebrow>
+            <Eyebrow index="alchyx">The D-ALabs design system</Eyebrow>
             <h1 className="hero__title">
-              Eight design systems. <span className="em">One color.</span>
+              The D-ALabs <span className="em">design system.</span>
             </h1>
             <p className="hero__lede">
-              Alchyx takes the best component APIs of eight design systems and re-skins them in one
-              color — the D-ALabs Lab&nbsp;/&nbsp;Dark&nbsp;/&nbsp;Ark language, one accent at a
-              time. Same proven ergonomics. Our palette, everywhere.
+              Alchyx is one coherent React + TypeScript library on the
+              Lab&nbsp;/&nbsp;Dark&nbsp;/&nbsp;Ark design language — every foundation and every
+              component, in one color. It brings the best of eight design systems into a single,
+              accessible system.
             </p>
             <div className="hero__cta">
               <Button asChild size="lg">
