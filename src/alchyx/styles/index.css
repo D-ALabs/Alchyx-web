@@ -1,0 +1,9 @@
+/* ============================================================================
+   Alchyx design-token foundation — the D-ALabs Lab/Dark/Ark language.
+   Imported once in the root layout. Fonts are handled by next/font (which sets
+   --font-hanken / --font-grotesk / --font-space-mono), so fonts.css is omitted.
+   ========================================================================== */
+@import "./tokens.css";
+@import "./reset.css";
+@import "./keyframes.css";
+@import "./utilities.css";

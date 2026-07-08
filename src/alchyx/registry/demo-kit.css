@@ -1,0 +1,133 @@
+/* demo-kit — shared specimen scaffolding. Tokens only. */
+.dk-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dk-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dk-note {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+/* Interactive-showcase controls */
+.dk-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 26px;
+  align-items: flex-end;
+}
+.dk-field {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.dk-field__label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.dk-field__control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Segmented picker */
+.dk-seg {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--bd);
+  border-radius: var(--radius-pill);
+  background: var(--surface2);
+}
+.dk-seg__btn {
+  padding: 6px 13px;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--sub);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+.dk-seg__btn:hover {
+  color: var(--ink);
+}
+.dk-seg__btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.dk-seg__btn[data-active] {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+/* Demo toggle */
+.dk-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  color: var(--ink);
+}
+.dk-toggle__track {
+  position: relative;
+  width: 42px;
+  height: 24px;
+  border-radius: var(--radius-pill);
+  background: var(--surface2);
+  border: 1px solid var(--bd-hov);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+.dk-toggle__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--faint);
+  transition: transform 0.35s var(--ease-spring), background-color 0.25s ease;
+}
+.dk-toggle[data-on] .dk-toggle__track {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+.dk-toggle[data-on] .dk-toggle__thumb {
+  transform: translateX(18px);
+  background: var(--accent);
+}
+.dk-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+.dk-toggle__label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sub);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dk-toggle__thumb {
+    transition: none;
+  }
+}

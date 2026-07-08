@@ -1,0 +1,21 @@
+/* Alchyx product site — global stylesheet.
+   Order: design-token foundation → shared site chrome. Page/component styles
+   are colocated and imported by their own modules. */
+@import "../alchyx/styles/index.css";
+@import "../components/site/site.css";
+
+html {
+  min-height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+#site-main {
+  flex: 1 0 auto;
+}
