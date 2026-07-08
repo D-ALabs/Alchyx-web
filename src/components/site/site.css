@@ -222,8 +222,28 @@
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin-left: auto;
+}
+.nav-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--bd);
+  border-radius: 10px;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--surface) 60%, transparent);
+  transition: border-color 0.25s ease, color 0.25s ease, background-color 0.25s ease;
+}
+.nav-github:hover {
+  border-color: var(--bd-hov);
+  color: var(--accent);
+}
+.nav-github:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 .nav-burger {
   display: none;
